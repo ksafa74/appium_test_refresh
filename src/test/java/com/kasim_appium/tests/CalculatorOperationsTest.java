@@ -46,7 +46,7 @@ public class CalculatorOperationsTest {
     @Test
     public void test1Add() {
 
-        MobileElement four = driver.findElement(MobileBy.id("com.google.android.calculator:id/digit_4"));
+        MobileElement four = driver.findElement(MobileBy.id("com.google.android.calculator:id/digit_3"));
         MobileElement five = driver.findElement(MobileBy.id("com.google.android.calculator:id/digit_5"));
         MobileElement plus = driver.findElement(MobileBy.AccessibilityId("plus"));
         MobileElement equals = driver.findElement(MobileBy.AccessibilityId("equals"));
@@ -58,7 +58,7 @@ public class CalculatorOperationsTest {
         MobileElement result = driver.findElement(MobileBy.id("com.google.android.calculator:id/result_final"));
 
         int actualResult = Integer.parseInt(result.getText());
-        int expectedResult = 9;
+        int expectedResult = 8;
 
         Assertions.assertEquals(expectedResult,actualResult);
 
